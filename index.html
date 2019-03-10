@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>夸克</title>
+
+		<meta name="theme-color" content="#48ddbc">
+
+		<link href="https://cdn.bootcss.com/material-design-lite/1.3.0/material.teal-orange.min.css" rel="stylesheet">
+		<style>
+		@font-face {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff2) format('woff2');
+		}
+		.material-icons {
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+		}
+		</style>
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:description" content="遵循原版主题的 Minecraft 模组。" />
+		<meta name="twitter:title" content="夸克" />
+		<meta name="twitter:site" content="@vazkii" />
+
+		<link rel="stylesheet" href="quark.css">
+		<link rel="icon" href="favicon.ico">
+	</head>
+
+	<body>
+		<div id="main-container">
+			<div id="header">
+				<img src="img/icon.png" id="quark-logo"></img>
+				<a href="https://www.creeperhost.net/"><img id="sellout-image" src="https://vazkii.us/sellout.png"></img></a>
+
+				<div id="header-contents">
+					<div class="title"><span class="q">夸</span>克</div>
+					<div class="subtitle">改变你的游戏，而不是游戏玩法。</div>
+				</div>
+
+				<a href="https://minecraft.curseforge.com/projects/quark"><button id="download-button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+					<i class="material-icons">file_download</i>
+				</button></a>
+
+				<div id="download-section">
+					<img src="https://cf.way2muchnoise.eu/full_quark_downloads.svg"></img> <img src="https://cf.way2muchnoise.eu/versions/quark.svg"></img>
+				</div>
+			</div>
+
+			<div id="contents" class="mdl-layout mdl-js-layout mdl-layout--transparent">
+				<header class="mdl-layout__header mdl-layout__header--transparent">
+					<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-layout--fixed-tabs mdl-layout__header--transparent">
+						<a href="#module-info" data-module="info" class="mdl-layout__tab module-button is-active">信息</a>
+						<a href="#module-automation" data-module="automation" class="mdl-layout__tab module-button">自动化</a>
+						<a href="#module-building" data-module="building" class="mdl-layout__tab module-button">建材</a>
+						<a href="#module-decoration" data-module="decoration" class="mdl-layout__tab module-button">装饰</a>
+						<a href="#module-management" data-module="management" class="mdl-layout__tab module-button">管理</a>
+						<a href="#module-tweaks" data-module="tweaks" class="mdl-layout__tab module-button">调整</a>
+						<a href="#module-vanity" data-module="vanity" class="mdl-layout__tab module-button">随意之作</a>
+						<a href="#module-world" data-module="world" class="mdl-layout__tab module-button">世界</a>
+            			<a href="#module-client" data-module="client" class="mdl-layout__tab module-button">客户端</a>
+						<a href="#module-misc" data-module="misc" class="mdl-layout__tab module-button">杂项</a>
+						<a href="#module-oddities" data-module="oddities" class="mdl-layout__tab module-button">奇思妙想</a>
+					</div>
+				</header>
+
+				<div class="mdl-layout__content" id="content-holder">
+					<section class="mdl-layout__tab-panel is-active card info-card" id="module-info">
+						<div class="page-content">
+							<b>夸克</b>是 Minecraft 的模组。它遵循非常简单的规范：<i>任何添加到夸克的特性都不损害原版的游戏风格。</i>以旨在创建与原版类似的体验。夸克目前拥有 <b id="feature-counter"></b> 个默认特性。
+                            <br><br>
+                            有鉴于此，夸克中的每个特性都小巧而简洁。本模组也因此得名 Quark —— 因为 Quark（夸克）本身也是一种十分小的存在。夸克是<i>模块化模组</i>。这意味着它的特性被分为多个模块。如果玩家需要，所有模块皆可被禁用，所有特性也皆可被禁用。很多特性还有额外的配置选项。
+                            <br><br>
+                            在游戏中，模组特性配置可通过“Mod 选项”菜单访问。大多数特性能在游戏中开关，小部分需要重新加载世界，这取决于玩家改变了选项。任何添加了明确内容（如物品、方块或实体）的特性，需要重新加载世界。
+                            <br><br>
+                            点击不同标签查看模组内容。如果你使用移动设备，你向左滑动然后点击标签来查看更多内容。向下滚动可查看安装说明及其他信息。你可以点击页面顶部的下载按钮下载夸克。
+							<br><br>
+							<b>注意本模组的正常运行需要安装 <a href="https://minecraft.curseforge.com/projects/autoreglib">AutoRegLib</a>。</b>（旧版本或许不需要）
+							<br><br>
+							<img id="main-image" src="img/main.png"></img>
+
+							<hr>
+
+							<b>安装说明</b>
+							<br><br>
+							本模组需要 Minecraft Forge。我们不支持 Bukkit, Spigot, Cauldron, Sponge 或任何其他替代服务端。 虽然有些<i>可能</i>是兼容的，如果你这样做，需要自己处理兼容。<i>模组原样提供，不作任何保证。如果它破坏了你的存档，我们不负责。请始终进行备份。</i>
+							<br><br>
+							这只是标准的 Forge Mod 安装过程。如果你已经完成了，可以跳过它。
+							<ol>
+								<li>确保你安装了 Minecraft。</li>
+								<li>在<a href="https://files.minecraftforge.net/">这里</a>找到你的目标 Minecraft 版本的 Minecraft Forge。</li>
+								<li>下载 installer-win（或 installer，如果你使用的不是 Windows）并运行。新的 Forge 配置将添加到你的 Minecraft 启动器。</li>
+								<li>点击图片上方的链接下载 AutoRegLib。将下载的 .jar 文件放入你的“mods”文件夹。</li>
+								<li>点击顶部的下载按钮下载夸克。将下载的 .jar 文件放入你的“mods”文件夹。
+									<ul>
+										<li>“mods”文件夹位于“resourcepacks”文件夹旁边。要找到它，运行新的 Forge 实例，打开“资源包”菜单，打开该文件夹，然后在上一级别到达所有 minecraft 文件所在的位置。“mods”文件夹应该与“screenshots”和“saves”在一起。</li></ul></li>
+								<li>安装好夸克后运行新的 Forge 配置。</li>
+							</ol>
+
+							对于服务器安装：
+							<ol>
+								<li>按照上述步骤，直到步骤3。在步骤3，选择服务器而不是客户端，并将位置更改为空文件夹。</li>
+								<li>在你选择的空文件夹中创建一个“mods”文件夹，现在加入你的服务器文件。</li>
+								<li>点击图片上方的链接下载 AutoRegLib。将下载的 .jar 文件放入你的“mods”文件夹。</li>
+								<li>点击顶部的下载按钮下载夸克。将下载的 .jar 文件放入你的“mods”文件夹。</li>
+								<li>使用 forge jar 运行服务器。<i>不是 minecraft_server jar</i></li>
+							</ol>
+
+							另外，你还可以使用 <a href="https://www.curse.com/download">Curse app</a> 来直接安装本模组。请确定你安装了 Minecraft 插件。<br>
+							是的，你可以在整合包中使用本模组。
+							<hr>
+							<b>制作人员名单及感谢</b>
+							<ul>
+								<li>wiiv for most of the textures.</li>
+								<li>Rorax for the emote icons.</li>
+								<li>cheeserolls for the biome detection code from Biomes'o'Plenty used for Pathfinder Maps.</li>
+								<li>DylanKaiser for the inventory chest icon.</li>
+								<li>SanAndreasP for the chest textures and most of their code.</li>
+								<li>ZeroLevels for the Iron Plate texture.</li>
+								<li>Noodlor for the variety dungeon structures.</li>
+								<li>Xisumavoid for the sticky piston side texture.</li>
+								<li>/u/Soniop for the realistic world preset.</li>
+								<li>/u/Martwaza for the trapdoor textures.</li>
+								<li>/u/FelitonC and /u/origamidragon412 for the banner textures.</li>
+								<li>/u/kopasz7 for the Midori block textures.</li>
+								<li>/u/robotthunder500 for the Bookshelf textures.</li>
+								<li>/u/darwinpatrick for the Soul Sandstone textures.</li>
+								<li>/u/Nyodex for the original Duskbound Block idea and textures.</li>
+								<li>/u/MushirMickeyJoe for recreation of the pocket edition piston model.</li>
+								<li>/u/CopherSans for the improved bow animation.</li>
+								<li>The creators of all the awesome suggestions I found in /r/MinecraftSuggestions and /r/QuarkMod that I implemented here.</li>
+								<li>And all the awesome people who pull requested features into the mod, credited in their individual cards.</li>
+							</ul>
+							<hr>
+							<b>联系及捐助方式</b>
+							<ul>
+								<li><a href="https://www.reddit.com/r/quarkmod">夸克 Subreddit</a> <i>（在这里提建议，请先阅读贴士！）</i></li>
+								<li><a href="https://github.com/Vazkii/Quark/issues">问题反馈</a> <i>（在这里提交bugs）</i></li>
+								<li><a href="https://github.com/Vazkii/Quark">源码</a></li>
+								<li><a href="https://github.com/Vazkii/Quark/blob/master/modders.md">为开发者提供的 APIs</a></li>
+								<li><a href="https://twitter.com/Vazkii/">Vazkii 的 Twitter</a></li>
+								<li><a href="https://patreon.com/Vazkii/">Vazkii 的 Patreon</a></li>
+								<li><a href="https://twitter.com/wiliv75/">wiiv 的 Twitter</a></li>
+								<li><a href="https://patreon.com/WIIV/">wiiv 的 Patreon</a></li>
+								<li><a href="https://vazkii.us/about-me/supportdonations/">捐助</a></li>
+								<li><a href="https://vazkii.us/about-me/contact/">电子邮箱及其他联系方式</a></li>
+								<li><a href="https://vazkii.us/">vazkii.us</a></li>
+							</ul>
+							<br>
+							</div>
+					</section>
+
+					<section class="mdl-layout__tab-panel" id="module-automation"></section>
+					<section class="mdl-layout__tab-panel" id="module-building"></section>
+					<section class="mdl-layout__tab-panel" id="module-decoration"></section>
+					<section class="mdl-layout__tab-panel" id="module-management"></section>
+					<section class="mdl-layout__tab-panel" id="module-tweaks"></section>
+					<section class="mdl-layout__tab-panel" id="module-vanity"></section>
+					<section class="mdl-layout__tab-panel" id="module-world"></section>
+					<section class="mdl-layout__tab-panel" id="module-client"></section>
+					<section class="mdl-layout__tab-panel" id="module-misc"></section>
+					<section class="mdl-layout__tab-panel" id="module-oddities"></section>
+				</div>
+			</div>
+		</div>
+
+		<button id="btt-button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+			<i class="material-icons">arrow_upward</i>
+		</button>
+
+		<div id="import-string-container">
+			<div id="import-string-desc">
+				你禁用了 <span id="disabled-feature-count">0</span> 项特性。如果你在使用夸克 r1.4-118 以上的版本，你可以点击复制按钮，然后在游戏的配置界面中点击导入配置按钮来导入禁用的特性。
+			</div>
+			<div id="import-string-button">
+				复制
+			</div>
+		</div>
+
+		<div id="footer">
+			欢迎为本汉化项目<a href="https://github.com/CFPAOrg/QuarkWiki">提供帮助</a>
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+		<script src="https://cdn.bootcss.com/mustache.js/2.3.0/mustache.min.js"></script>
+		<script src="https://cdn.bootcss.com/material-design-lite/1.3.0/material.min.js"></script>
+		<script src="quark.js"></script>
+	</body>
+</html>
